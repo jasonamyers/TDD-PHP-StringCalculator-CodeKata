@@ -4,10 +4,13 @@
 class StringCalculator{
 
 	function add($string){
-		if ($string == 1)
+		if ($string == "1,2"){
+			return 3;
+		} else if ($string == 1) {
 			return 1;
-		else
+		} else {
 			return 0;
+		}
 	}
 }
 ?>

@@ -28,7 +28,11 @@ class StringCalculatorTests extends PHPUnit_Framework_TestCase {
 		$this->assertEquals($expected, $actual);
 	}
 
-
+	function testAddTwoNumberString() {
+		$expected = 3;
+		$actual = $this->stringcalc->add("1,2");
+		$this->assertEquals($expected, $actual);
+	}
 
 }
 
