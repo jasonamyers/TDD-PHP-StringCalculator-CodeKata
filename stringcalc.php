@@ -4,10 +4,13 @@
 class StringCalculator{
 
 	function add($string){
-		if ($string == "1,2"){
-			return 3;
-		} else if ($string == 1) {
-			return 1;
+		$sum = 0;
+		if (strlen($string) != 0 ){
+			$numbers = explode(',', $string);
+			foreach ($numbers as $number) {
+				$sum += $number;
+			}
+			return $sum;
 		} else {
 			return 0;
 		}
