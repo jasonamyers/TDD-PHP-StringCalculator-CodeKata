@@ -34,6 +34,18 @@ class StringCalculatorTests extends PHPUnit_Framework_TestCase {
 		$this->assertEquals($expected, $actual);
 	}
 
+	function testAddThreeNumberString() {
+		$expected = 6;
+		$actual = $this->stringcalc->add("1,2,3");
+		$this->assertEquals($expected, $actual);
+	}
+
+	function testAddFourNumberString() {
+		$expected = 34;
+		$actual = $this->stringcalc->add("10,9,8,7");
+		$this->assertEquals($expected, $actual);
+	}
+
 }
 
 ?>
