@@ -46,6 +46,12 @@ class StringCalculatorTests extends PHPUnit_Framework_TestCase {
 		$this->assertEquals($expected, $actual);
 	}
 
+	function testAddThreeNumberStringWithNewLineDelimiter() {
+		$expected = 6;
+		$actual = $this->stringcalc->add("1\n2,3");
+		$this->assertEquals($expected, $actual);
+	}
+
 }
 
 ?>
