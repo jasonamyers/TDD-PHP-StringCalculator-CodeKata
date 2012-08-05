@@ -6,19 +6,29 @@ require_once 'PHPUnit/Autoload.php';
 
 class StringCalculatorTests extends PHPUnit_Framework_TestCase {
 
+	protected $stringcalc;
+
+	protected function setUp() {
+		$this->stringcalc = new StringCalculator();
+	}
+
+	protected function tearDown() {
+		unset($this->stringcalc);
+	}
+
 	function testAddEmptyString() {
-		$stringcalc = new StringCalculator();
 		$expected = 0;
-		$actual = $stringcalc->add("");
+		$actual = $this->stringcalc->add("");
 		$this->assertEquals($expected, $actual);
 	}
 
 	function testAddSingleNumberString() {
-		$stringcalc = new StringCalculator();
 		$expected = 1;
-		$actual = $stringcalc->add("1");
+		$actual = $this->stringcalc->add("1");
 		$this->assertEquals($expected, $actual);
 	}
+
+
 
 }
 
