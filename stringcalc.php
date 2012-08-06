@@ -1,19 +1,20 @@
 <?php
 // String Calculator
 
-class StringCalculator{
+class StringCalculator
+{
+    public function add($string)
+    {
+        $sum = 0;
+        if (strlen($string) != 0 ) {
+            $numbers = preg_split("/[\\n|,]+/", $string);
+            foreach ($numbers as $number) {
+                $sum += $number;
+            }
 
-	function add($string){
-		$sum = 0;
-		if (strlen($string) != 0 ){
-			$numbers = preg_split("/[\\n|,]+/", $string);
-			foreach ($numbers as $number) {
-				$sum += $number;
-			}
-			return $sum;
-		} else {
-			return 0;
-		}
-	}
+            return $sum;
+        } else {
+            return 0;
+        }
+    }
 }
-?>
