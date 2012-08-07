@@ -6,7 +6,7 @@ require_once 'stringcalc.php';
 use PHPUnit;
 require_once 'PHPUnit/Autoload.php';
 
-class stringcalctests extends PHPUnit_Framework_TestCase
+class StringCalcTests extends PHPUnit_Framework_TestCase
 {
     protected $stringcalc;
 

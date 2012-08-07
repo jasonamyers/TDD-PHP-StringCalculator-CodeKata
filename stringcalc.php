@@ -2,7 +2,7 @@
 
 namespace TDDPHPStringCalculatorCodeKata;
 // String Calculator
-class stringcalc
+class StringCalc
 {
     public function add($string)
     {
