@@ -1,10 +1,12 @@
 <?php
-// String Calculator Tests
 
+namespace TDDPHPStringCalculatorCodeKata;
+// String Calculator Tests
 require_once 'stringcalc.php';
+use PHPUnit;
 require_once 'PHPUnit/Autoload.php';
 
-class StringCalculatorTests extends PHPUnit_Framework_TestCase
+class stringcalctests extends PHPUnit_Framework_TestCase
 {
     protected $stringcalc;
 
@@ -61,4 +63,3 @@ class StringCalculatorTests extends PHPUnit_Framework_TestCase
     }
 
 }
-?>

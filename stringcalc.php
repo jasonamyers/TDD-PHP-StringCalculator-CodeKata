@@ -1,7 +1,8 @@
 <?php
-// String Calculator
 
-class StringCalculator
+namespace TDDPHPStringCalculatorCodeKata;
+// String Calculator
+class stringcalc
 {
     public function add($string)
     {
@@ -18,4 +19,3 @@ class StringCalculator
         }
     }
 }
-?>
