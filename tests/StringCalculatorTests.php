@@ -2,7 +2,7 @@
 
 namespace TDDPHPStringCalculatorCodeKata;
 // String Calculator Tests
-require_once 'StringCalculator.php';
+require_once '../src/StringCalculator.php';
 use PHPUnit;
 require_once 'PHPUnit/Autoload.php';
 
