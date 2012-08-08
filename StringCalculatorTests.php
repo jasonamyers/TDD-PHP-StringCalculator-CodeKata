@@ -2,11 +2,11 @@
 
 namespace TDDPHPStringCalculatorCodeKata;
 // String Calculator Tests
-require_once 'stringcalc.php';
+require_once 'StringCalculator.php';
 use PHPUnit;
 require_once 'PHPUnit/Autoload.php';
 
-class StringCalcTests extends PHPUnit_Framework_TestCase
+class StringCalcTests extends \PHPUnit_Framework_TestCase
 {
     protected $stringcalc;
 
